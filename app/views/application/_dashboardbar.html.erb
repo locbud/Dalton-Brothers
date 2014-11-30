@@ -1,0 +1,49 @@
+<div class="off-canvas-wrap" data-offcanvas> 
+   <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+
+      <section class="middle tab-bar-section">
+        <h1 class="title">Everyday in Life</h1>
+      </section>
+
+      <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Life in a BashShell</label></li>
+        <li><a href="#">Your dreams</a></li>
+        <li><a href="#">Your routines</a></li>
+        <li><a href="#">Your automation</a></li>
+        <li><a href="#">Your dictionay</a></li>
+      </ul>
+    </aside>
+
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Users</label></li>
+        <li><%= link_to "Logout", logout_path %></li>
+        <li><a href="#">...</a></li>
+      </ul>
+    </aside>
+
+<!-- Main things come here -->
+    <section class="main-section">
+      <div class="row">
+        <div class="large-8 columns"><%= yield %></div>
+        <div class="large-4 columns">
+          <h2 class="subheader">About us</h2>
+          My name is Hoang Bui Khanh. I love maths, computer science and engineering.
+        </div>
+      </div>
+    </section> 
+<!-- End -->
+
+    <a class="exit-off-canvas"></a> 
+  </div> 
+</div>

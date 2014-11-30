@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @what_fixed_to_do.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @what_fixed_to_do.description %>
+</p>
+
+<p>
+  <strong>Scheduled time:</strong>
+  <%= @what_fixed_to_do.scheduled_time %>
+</p>
+
+<p>
+  <strong>Choice count:</strong>
+  <%= @what_fixed_to_do.choice_count %>
+</p>
+
+<%= link_to 'Edit', edit_what_fixed_to_do_path(@what_fixed_to_do) %> |
+<%= link_to 'Back', what_fixed_to_dos_path %>

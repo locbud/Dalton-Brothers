@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Let's have some fun" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <% if false  %> <!--current_user--> 
+      <%= render "dashboardbar" %>
+    <% else %>
+      <%= render "frontdoor" %>
+    <% end %>
+
+    <div class="orbit-container">
+      <ul class="orbit-ul" data-orbit>
+      <li class="orbit-item"><img class="orbit-item" src="http://www.hdpaperz.com/wallpaper/original/3d-tsunami-roll-wallpaper-3d-models-3d_00429024_1.jpg" 
+      <li class="orbit-item"><img class="orbit-item" src="/o.jpg" alt="slide 2" /><div class="orbit-caption"></div></li>
+      <li class="orbit-item"><img class="orbit-item" src="/cat.jpg" alt="slide 2" /><div class="orbit-caption"></div></li>
+        <li class="orbit-item"><img class="orbit-item" src="/wall.jpg" alt="slide 2" /><div class="orbit-caption"></div></li>
+        <li class="orbit-item"><img class="orbit-item" src="/2.jpg" alt="slide 2" /><div class="orbit-caption"></div></li>
+      </ul>
+    </div>  
+    
+    
+    <%= yield %>
+
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>

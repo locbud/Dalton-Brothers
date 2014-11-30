@@ -1,0 +1,31 @@
+<h1>Listing what_fixed_to_dos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Scheduled time</th>
+      <th>Choice count</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @what_fixed_to_dos.each do |what_fixed_to_do| %>
+      <tr>
+        <td><%= what_fixed_to_do.title %></td>
+        <td><%= what_fixed_to_do.description %></td>
+        <td><%= what_fixed_to_do.scheduled_time %></td>
+        <td><%= what_fixed_to_do.choice_count %></td>
+        <td><%= link_to 'Show', what_fixed_to_do %></td>
+        <td><%= link_to 'Edit', edit_what_fixed_to_do_path(what_fixed_to_do) %></td>
+        <td><%= link_to 'Destroy', what_fixed_to_do, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New What fixed to do', new_what_fixed_to_do_path %>

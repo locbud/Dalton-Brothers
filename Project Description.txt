@@ -1,0 +1,90 @@
+I love to do what i actually love
+
+I dont want list
+
+- I dont want to take time to think of what will eat today
+- I dont want to take time to think of what to do next
+- I dont want to take time to think of clothes will weare to day
+- I dont want to take time to think of what i will buy to day
+- I dont want to take time to search for a bus
+- I dont want to take time to search for videos or music to watch next
+- I dont want to take time to remember of times of some events
+- I dont want to take time to calculate the time taken to do something
+- I dont want to find a place that i will have a seat
+- I dont want to find to look for a presentation to do
+- I dont want to take too much time to write a email
+- I dont want to take too much time to reply a emails facebook or whatever
+- I dont want to re think of an ideas
+- I dont to write a bash to do something, rather to create them automatically
+- I dont to waste my time to think of what problem i will do to have some fun
+- I dont want to google to look for a reference which i have read it or watch
+- I dont want to rewatch a video that i have watched
+- I dont want to keep tracking what an event will happens rather receives an emails for it
+
+
+I wish to do something to day
+[Deadline for each one, number of items] => time for each items
+[]
+
+- I wish i finish reading a book 
+- I wish i can learn a new language
+- I wish i finish to watch a series of episodes
+- I wish i can have a little time to relax at a specific time
+- I wish i can visit a friend
+- I wish i can have
+- I wish i receives a great quotes today from a person;
+- I wish i can give people a great quotes from me
+- I wish i can create a conversation from with my friends
+- I wish i can read a conversation from whole week at a time i can
+
+
+- Add a things u notice u repeat too manytime
+- Suggest from the system based on this list
+
+
+
+System will handles:
+- Things that i love to do: => give an estimate on time  and scheduling for it
+- Things that i hate to waste time on but still vital => plan for myself 
+
+
+
+MyLittleLife Project
+
+Models:
+
+- WhatLoveToDo
+
+	- Title
+	- Description (Optional)
+	- Deadline (Important level)
+	- NumberOfItems
+	- EstinmatedTimeForEachItem
+
+=> Do we have time for it
+=> Time available for each item and is it good for what user estimate
+=> Suggestion extension or other item that can be removed
+
+
+- WhatFixedToDo
+
+ 	- Title 
+ 	- Description
+ 	- Add time for it (daily basic or weekly or customize days)
+ 	- What is your available choices
+ 		- Title
+ 		- Description
+ 		- Order to appear on the list (random or sequential)
+ 	- How many choices for each time slot
+
+- WhatOptionalToDo
+	- Title
+	- Description
+	- Funtionalities Added
+
+- WhatToLookUp
+	- Title
+	- Description	
+
+- WhatShouldAvoid
+	- quotes

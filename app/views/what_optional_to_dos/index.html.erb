@@ -1,0 +1,29 @@
+<h1>Listing what_optional_to_dos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Funtionalities</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @what_optional_to_dos.each do |what_optional_to_do| %>
+      <tr>
+        <td><%= what_optional_to_do.title %></td>
+        <td><%= what_optional_to_do.description %></td>
+        <td><%= what_optional_to_do.funtionalities %></td>
+        <td><%= link_to 'Show', what_optional_to_do %></td>
+        <td><%= link_to 'Edit', edit_what_optional_to_do_path(what_optional_to_do) %></td>
+        <td><%= link_to 'Destroy', what_optional_to_do, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New What optional to do', new_what_optional_to_do_path %>

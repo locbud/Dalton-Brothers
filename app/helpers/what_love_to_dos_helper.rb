@@ -1,0 +1,2 @@
+module WhatLoveToDosHelper
+end

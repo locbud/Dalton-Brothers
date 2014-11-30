@@ -1,0 +1,2 @@
+module WhatShouldAvoidsHelper
+end

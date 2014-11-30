@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @what_love_to_do.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @what_love_to_do.description %>
+</p>
+
+<p>
+  <strong>Deadline:</strong>
+  <%= @what_love_to_do.deadline %>
+</p>
+
+<p>
+  <strong>Number of items:</strong>
+  <%= @what_love_to_do.number_of_items %>
+</p>
+
+<p>
+  <strong>User estimated time:</strong>
+  <%= @what_love_to_do.user_estimated_time %>
+</p>
+
+<%= link_to 'Edit', edit_what_love_to_do_path(@what_love_to_do) %> |
+<%= link_to 'Back', what_love_to_dos_path %>

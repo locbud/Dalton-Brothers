@@ -1,0 +1,59 @@
+<%= form_for(@what_love_to_do) do |f| %>
+  <% if @what_love_to_do.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@what_love_to_do.errors.count, "error") %> prohibited this what_love_to_do from being saved:</h2>
+
+      <ul>
+      <% @what_love_to_do.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row collapse">
+    <div class="small-3 columns">
+      <%= f.label :title, class: "right inline", title: "Titling your to-do item", data: {tooltip: true} %><br>
+    </div>
+    <div class="small-9 columns"> 
+    <%= f.text_field :title %>
+    </div>
+  </div>
+    <div class="row collapse">
+    <div class="small-3 columns">
+      <%= f.label :description, class: "right inline" %><br>
+    </div>
+    <div class="small-9 columns"> 
+    <%= f.text_area :description %>
+    </div>
+  </div>
+  <div class="row collapse">
+    <div class="small-3 columns">
+      <%= f.label :deadline, class: "right inline" %><br>
+    </div>
+    <div class="small-9 columns"> 
+    <%= f.text_field :deadline %>
+    </div>
+  </div>
+  <div class="row collapse">
+    <div class="small-3 columns">
+      <%= f.label :number_of_items, class: "right inline" %><br>
+    </div>
+    <div class="small-9 columns"> 
+    <%= f.text_field :number_of_items %>
+    </div>
+  </div>  
+    <div class="row collapse">
+    <div class="small-3 columns">
+      <%= f.label :user_estimated_time, class: "right inline" %><br>
+    </div>
+    <div class="small-9 columns"> 
+    <%= f.text_field :user_estimated_time %>
+    </div>
+  </div>
+  <div class="row collapse">
+    <div class="small-9 small-offset-3 columns">
+      <%= f.submit "Create", class: "button radius" %>
+    </div>
+  </div>
+<% end %>

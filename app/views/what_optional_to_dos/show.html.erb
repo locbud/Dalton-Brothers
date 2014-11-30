@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @what_optional_to_do.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @what_optional_to_do.description %>
+</p>
+
+<p>
+  <strong>Funtionalities:</strong>
+  <%= @what_optional_to_do.funtionalities %>
+</p>
+
+<%= link_to 'Edit', edit_what_optional_to_do_path(@what_optional_to_do) %> |
+<%= link_to 'Back', what_optional_to_dos_path %>

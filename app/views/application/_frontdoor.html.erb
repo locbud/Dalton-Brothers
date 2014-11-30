@@ -1,0 +1,32 @@
+<nav class="top-bar fixed">
+  <ul class="title-area">
+    <li class="name">
+      <h1><%= link_to "Welcome", root_path%></h1>
+    </li>
+  </ul> 
+  <section class="top-bar-section">    
+    <ul class="right">
+    <% if current_user %>
+      <li class="has-dropdown">
+        <a href="#">To-do things in life</a>
+        <ul class="dropdown">
+          <li><%= link_to "what you love to do ", what_love_to_dos_path %></li>
+          <li><%= link_to "What you need to do" %></li>
+          <li><%= link_to "What you want to do" %></li>
+          <li class="active"><%= link_to "What you like to do" %></li>
+        </ul>            
+      </li>
+      <li class="divider"></li>
+      <li><%= link_to "Look-Up Things" %></li>
+      <li class="divider"></li>
+      <li class="divider"></li>
+      <li class="has-form"><%= link_to "Log out", logout_path, class: "button radius" %></li>
+    <% else %>
+      <li class="divider"></li>
+      <li><%= link_to "Sign up", signup_path %></li>
+      <li class="divider">
+      <li><%= link_to "Log in", login_path %></li>
+    <% end %> 
+    </ul> 
+  </section>
+</nav>    

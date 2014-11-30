@@ -1,0 +1,33 @@
+<%= form_for(@what_fixed_to_do) do |f| %>
+  <% if @what_fixed_to_do.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@what_fixed_to_do.errors.count, "error") %> prohibited this what_fixed_to_do from being saved:</h2>
+
+      <ul>
+      <% @what_fixed_to_do.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :scheduled_time %><br>
+    <%= f.text_field :scheduled_time %>
+  </div>
+  <div class="field">
+    <%= f.label :choice_count %><br>
+    <%= f.number_field :choice_count %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
