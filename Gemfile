@@ -27,7 +27,6 @@ gem 'spring',        group: :development
 
 gem 'foundation-rails'
 gem 'sorcery'
-gem 'sqlite3'
 gem 'pg', '~>0.13.2'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
